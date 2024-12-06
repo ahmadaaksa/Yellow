@@ -1,24 +1,3 @@
-<?php
-include 'db.php';
-
-$message="";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
-
-    if ($conn->query($sql) === TRUE) {
-        $message = "<div class='pesan-sukses'>Registrasi berhasil! <a href='login.php'>Login di sini</a></div>";
-    } else {
-        $message = "<div class='pesan-eror'>Error: " . $conn->error . "</div>";
-    }
-}
-
-$conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
