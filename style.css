@@ -24,7 +24,7 @@ body {
 
 /* Tambahkan padding ke elemen berikutnya agar tidak tertutup header */
 main {
-    margin-top: 110vh; /* Sesuaikan dengan tinggi header */
+    margin-top: relative; /* Sesuaikan dengan tinggi header */
 }
 
 
