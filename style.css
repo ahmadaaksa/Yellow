@@ -4,7 +4,7 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    display: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -24,8 +24,7 @@ body {
 
 /* Tambahkan padding ke elemen berikutnya agar tidak tertutup header */
 main {
-    margin-top: 100vh; /* Sesuaikan dengan tinggi header */
-    position: fixed;
+    margin-top: 80px; /* Sesuaikan dengan tinggi header */
 }
 
 
