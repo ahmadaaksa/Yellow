@@ -24,7 +24,7 @@ body {
 
 /* Tambahkan padding ke elemen berikutnya agar tidak tertutup header */
 main {
-    margin-top: flex; /* Sesuaikan dengan tinggi header */
+    margin-top: 120vh; /* Sesuaikan dengan tinggi header */
 }
 
 
