@@ -5,125 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Yellppw</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
-        .nav-menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
 
-        .nav-menu a {
-            text-decoration: none;
-            color: white;
-            margin-right: 20px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+    .nav-menu a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
 
-        .nav-menu a:hover {
-            background-color: #575757;
-        }
+    .nav-menu a:hover {
+        background-color: #575757;
+    }
 
-        .dropdown-content,
-        .dropdown-beranda {
-            display: none;
-            position: absolute;
-            background-color: #444;
-            margin-top: 5px;
-        }
+    .dropdown-content,
+    .dropdown-beranda {
+        display: none;
+        position: absolute;
+        background-color: #444;
+        margin-top: 5px;
+    }
 
-        .dropdown:hover .dropdown-content,
-        .dropdown1:hover .dropdown-beranda {
-            display: block;
-        }
+    .dropdown:hover .dropdown-content,
+    .dropdown1:hover .dropdown-beranda {
+        display: block;
+    }
 
-        .dropdown-content a,
-        .dropdown-beranda a {
-            display: block;
-            padding: 5px 10px;
-            text-align: left;
-        }
+    .dropdown-content a,
+    .dropdown-beranda a {
+        display: block;
+        padding: 5px 10px;
+        text-align: left;
+    }
 
-        .toggle-btn {
-            background-color: #444;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .toggle-btn {
+        background-color: #444;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-        .toggle-btn:hover {
-            background-color: #575757;
-        }
+    .toggle-btn:hover {
+        background-color: #575757;
+    }
 
-        main {
-            margin-top: 200px; /* Memberi jarak dari header */
-            padding: 20px;
-        }
+    main {
+        padding: 20px;
+        margin-top: 120px; /* Memberi jarak agar tidak tertutup header */
+    }
 
-        .introduction,
-        .features,
-        .testimonials {
-            margin-bottom: 30px;
-        }
+    .introduction,
+    .features,
+    .testimonials {
+        margin-bottom: 30px;
+    }
 
-        .features ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .features ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-        .features ul li {
-            margin-bottom: 10px;
-        }
+    .features ul li {
+        margin-bottom: 10px;
+    }
 
-        .testimonial {
-            background-color: #f9f9f9;
-            border-left: 5px solid #333;
-            margin-bottom: 15px;
-            padding: 10px;
-        }
+    .testimonial {
+        background-color: #f9f9f9;
+        border-left: 5px solid #333;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
 
-        .dark-mode {
-            background-color: #111;
-            color: #fff;
-        }
+    .dark-mode {
+        background-color: #111;
+        color: #fff;
+    }
 
-        .dark-mode .header {
-            background-color: #222;
-        }
+    .dark-mode .header {
+        background-color: #222;
+    }
 
-        .dark-mode .nav-menu a {
-            color: #ddd;
-        }
+    .dark-mode .nav-menu a {
+        color: #ddd;
+    }
 
-        .dark-mode .nav-menu a:hover {
-            background-color: #333;
-        }
+    .dark-mode .nav-menu a:hover {
+        background-color: #333;
+    }
 
-        .dark-mode .testimonial {
-            background-color: #222;
-            border-left-color: #555;
-        }
-    </style>
+    .dark-mode .testimonial {
+        background-color: #222;
+        border-left-color: #555;
+    }
+</style>
+
 </head>
 <body>
     <header class="header">
