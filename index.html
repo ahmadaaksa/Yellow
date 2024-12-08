@@ -5,150 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Yellppw</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
 
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-    }
+        .nav-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
 
-    .nav-menu a {
-        text-decoration: none;
-        color: white;
-        margin-right: 20px;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-    .nav-menu a:hover {
-        background-color: #575757;
-    }
+        .nav-menu a:hover {
+            background-color: #575757;
+        }
 
-    .dropdown-content,
-    .dropdown-beranda {
-        display: none;
-        position: absolute;
-        background-color: #444;
-        margin-top: 5px;
-    }
+        .toggle-btn {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    .dropdown:hover .dropdown-content,
-    .dropdown1:hover .dropdown-beranda {
-        display: block;
-    }
+        .toggle-btn:hover {
+            background-color: #575757;
+        }
 
-    .dropdown-content a,
-    .dropdown-beranda a {
-        display: block;
-        padding: 5px 10px;
-        text-align: left;
-    }
+        main {
+            padding: 20px;
+            margin-top: 120px; /* Pastikan margin-top sama atau lebih besar dari tinggi header */
+        }
 
-    .toggle-btn {
-        background-color: #444;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        .introduction,
+        .features,
+        .testimonials {
+            margin-bottom: 30px;
+        }
 
-    .toggle-btn:hover {
-        background-color: #575757;
-    }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    main {
-        padding: 20px;
-        margin-top: 120px; /* Memberi jarak agar tidak tertutup header */
-    }
+        .features ul li {
+            margin-bottom: 10px;
+        }
 
-    .introduction,
-    .features,
-    .testimonials {
-        margin-bottom: 30px;
-    }
+        .testimonial {
+            background-color: #f9f9f9;
+            border-left: 5px solid #333;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
 
-    .features ul {
-        list-style-type: none;
-        padding: 0;
-    }
+        .dark-mode {
+            background-color: #111;
+            color: #fff;
+        }
 
-    .features ul li {
-        margin-bottom: 10px;
-    }
+        .dark-mode .header {
+            background-color: #222;
+        }
 
-    .testimonial {
-        background-color: #f9f9f9;
-        border-left: 5px solid #333;
-        margin-bottom: 15px;
-        padding: 10px;
-    }
+        .dark-mode .nav-menu a {
+            color: #ddd;
+        }
 
-    .dark-mode {
-        background-color: #111;
-        color: #fff;
-    }
+        .dark-mode .nav-menu a:hover {
+            background-color: #333;
+        }
 
-    .dark-mode .header {
-        background-color: #222;
-    }
-
-    .dark-mode .nav-menu a {
-        color: #ddd;
-    }
-
-    .dark-mode .nav-menu a:hover {
-        background-color: #333;
-    }
-
-    .dark-mode .testimonial {
-        background-color: #222;
-        border-left-color: #555;
-    }
-</style>
-
+        .dark-mode .testimonial {
+            background-color: #222;
+            border-left-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <h1>Selamat Datang di Yellppw</h1>
         <h2>INFORMASI PENTING!!</h2>
         <p>Karena keterbatasan pada penyedia layanan hosting maka akses data ke database tidak bisa dilakukan</p>
-        <p>Website ini bekerja dengan baik sepenuhnya pada localhost</p><br>
+        <p>Website ini bekerja dengan baik sepenuhnya pada localhost</p>
         <p>&copy; 2024 Yellppw.</p>
         <p>Platform untuk berbagi ide dan pengalaman.</p>
         <nav class="nav-menu">
-            <div class="dropdown1">
-                <a href="index.html">Beranda</a>
-                <div class="dropdown-beranda">
-                    <a href="register.html">Daftar Akun Baru</a>
-                    <a href="login.html">Login</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="tentang.html">Tentang Kami</a>
-                <div class="dropdown-content">
-                    <a href="misi.html">Misi Kami</a>
-                    <a href="tim.html">Tim Kami</a>
-                </div>
-            </div>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Kami</a>
             <a href="kontak.html">Kontak</a>
             <button class="toggle-btn" onclick="toggleMode()">Ganti Mode</button>
         </nav>
