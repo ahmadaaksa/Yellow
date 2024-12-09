@@ -103,6 +103,38 @@
             background-color: #222;
             border-left-color: #555;
         }
+        .dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    margin-top: 5px; 
+    border-radius: 4px; 
+}
+
+.dropdown-content a{
+    color: #fff;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.dropdown-content a:last-child{
+    margin-bottom: 0; 
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
     </style>
 </head>
 <body>
@@ -114,9 +146,12 @@
         <p>&copy; 2024 Yellppw.</p>
         <p>Platform untuk berbagi ide dan pengalaman.</p>
         <nav class="nav-menu">
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html">Tentang Kami</a>
-            <a href="kontak.html">Kontak</a>
+            <div class="dropdown">
+                <a href="index.html">Beranda</a>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Daftar</a>
+            </div>
             <button class="toggle-btn" onclick="toggleMode()">Ganti Mode</button>
         </nav>
     </header>
